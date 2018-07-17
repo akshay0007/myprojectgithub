@@ -1,4 +1,17 @@
 firewall types and creations
+baston host
+screen subnet
+mutihome
+packet filtering
+packet level filtering
+statefull multiple level firewall
+spoofing protocol
+
+vpn
+proxy based
+tor
+GTunnel
+
 signature based
 intrusion based (AI model)
 snort heartbleed sigature
