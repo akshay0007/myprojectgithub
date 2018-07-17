@@ -12,11 +12,22 @@ proxy based
 tor
 GTunnel
 
+IPS
 signature based
 intrusion based (AI model)
 snort heartbleed sigature
+stick and snoot tools
 anonmaloulsy based
 honeyspot
 network based ids
+host based ids
+evasion tech....
 
-
+polymorphic code
+ascii shell code
+unicode 
+encrypted and compressed payloads
+session splicing
+denial of service
+invalid RST packets
+URG Flag
