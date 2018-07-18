@@ -1,1 +1,16 @@
 
+two demons for netfilter 
+1:iptable(deprected)
+2:firewall d(new )
+not run same time in same system
+systemctl status iptable
+softwares::
+iptables
+below written python 
+firewalld 
+firewall-config
+
+
+firewalld zones
+collection on connection types
+
