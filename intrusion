@@ -1,3 +1,83 @@
+Virtual hosting::
+VIRTUAL HOSTING:-
+
+Entries:-
+
+1.sites-enabled/000-default.conf:- 
+
+ <VirtualHost *:80>
+  ServerAdmin prateek.jain@skilrock.com
+  DocumentRoot "/var/www/khelplayrummy"     (path)
+  ServerName local.kpr.com
+  ServerAlias local.kpr.com
+  # ErrorLog "/var/log/httpd/domain1.com-error_log"
+  # CustomLog "/var/log/httpd/domain1.com-access_log" common
+ </VirtualHost>
+ 
+2.etc/apache2.conf:- 
+
+ <Directory /var/www/khelplayrummy>
+        RewriteEngine On
+        RewriteCond $1 !^(index\.php|robots\.txt|favicon\.ico)
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+ </Directory>
+
+3.gedit/etc/hosts-
+
+ 127.0.0.1 local.kpr.com(domain name)
+
+4. Enabling mod_rewrite:-
+
+   sudo a2enmod rewrite
+   apache restart:-
+   sudo service apache 2 restart;
+
+5. giving chmod and chown rights:-
+
+   sudo chown -R root:root khelplayrummy
+   sudo chmod -R 777 khelplayrummy
+
+ 6. Install php GD extension  for your php version:-
+ 
+    sudo apt-get install php7.0-gd  
+
+7. Map DB:- 
+
+  download sql dump from 30 server
+  in Sqlyog-
+    --create new db; (create database local_kpr;)
+    --select local_kpr (your db)
+    --restore from sql dump and select your .sql file/ -->execute.
+    i.e. create a local db.
+
+    --map the db in configuration.php of /kpr directory.
+    --check for hosts(127.0.0.1),user and pwd fields too.
+
+
+8.install curl:- (if req)
+
+  sudo apt-get install php-curl
+
+9. sudo service apache 2 restart;
+
+10. hit domain.
+
+Dns server::
+types
+configure in windows and ubuntu
+dig utitlity
+for ubuntu open source bind
+types
+https://en.wikipedia.org/wiki/Comparison_of_DNS_server_software
+configure bind::
+https://opensource.com/article/17/4/build-your-own-name-server
+https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-16-04
+complete dns and virtual hosting::
+https://www.digitalocean.com/community/tags/dns?type=tutorials
+
+
 firewall types and creations
 baston host
 screen subnet
@@ -31,3 +111,12 @@ session splicing
 denial of service
 invalid RST packets
 URG Flag
+
+honey pot
+
+project honeypot website
+types:
+low interaction
+high interaction
+honeyd website opensource project
+canary website(low interaction honeypots)
