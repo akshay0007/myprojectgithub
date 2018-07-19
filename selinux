@@ -13,4 +13,49 @@ firewall-config
 
 firewalld zones
 collection on connection types
+list of zones in firewall
+allowed services in firewall congig::
+::  firewall-cmd --add-service=servicename  for remove :: firewall-cmd --remove-service='name'
+apache service(http ,https),mail service(smtp,smtps,imap etc.)
+xmpp service ,smb service,nfs,ftp,sftp,
+sftp service is subset of ssh,,Tftp,ftp is not recommanded due to security issues
+
+
+firewall-cmd --panic-on
+firewall panic mode so it cannt be accessible
+
+
+SElinux:: comes with fedora
+enforcing mode by default.
+different modes of selinux
+
+installations::
+setroubleshoot-server installation
+policycoreutils-python
+gen2 linux
+
+cd etc/httpd/  mode_data.so
+chcon ::for changing context
+
+installing selinux man pages::
+sudo -s
+dnf//apt install policycoreutils-devel
+man man for man documentation
+ls /usr/share/man
+sepolicy manpage -a -p /usr/share/man/manxyz
+mandb (update every thing)
+
+man -k selinux
+
+
+understanding of boolean::
+website nsa.gov
+
+getsebool -a
+setsebool name 1/0  (1 for on 0 for off)
+after restart it goes away
+how to do this thing permantly::
+setsebool -P name=1
+
+
 
