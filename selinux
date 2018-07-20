@@ -57,5 +57,59 @@ after restart it goes away
 how to do this thing permantly::
 setsebool -P name=1
 
+for trouble shooting 
+dnf/apt install settroubleshootx-server
+install policycoreutils-python
+install policycoreutils-python-gui
+system-config-selinux
+seportutils
+semanage
+
+adding port
+semanage -a -t http_port_t -p tcp 82(adding port)
+semanage -l |grep -w http_port_t(list ports)
+semanage port -d -t http_port_t -p tcp 82(remove port)
+
+copying and moving
+cp
+mv
+preservecontext
+restoreconfig
+error logs in selinux::
+cd var/log
+cd /audit
+
+permissive mode note denied logs
+
+domain adding
+semanage permissive -a httpd_t
+semanage -l|grep permissive
+semanage permissive -d httpd_t(remove module)
+
+disabling and enable selinux:::
+always in permissive mode note enforcing mode for missbehaving
+cd etc/selinux
+in config file
+replace enforcing to disabled
+command
+getenforce
+reboot
+for reenable
+just replace disabled to permissive
+reboot
+
+further learing
+http://fedoraproject.org
+nsa.gov/ selinux documentation
+access.redhat.com doc selinux
+
+
+
+
+
+
+
+
+
 
 
