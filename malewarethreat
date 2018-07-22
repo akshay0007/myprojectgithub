@@ -12,3 +12,71 @@ trojen:hidden inside file
 BackDoor::
 easter egg
 logic bomb
+
+what is trojen
+spyware
+keylogger etc executable code
+disable firewall
+replace/delete os files
+disaple antivirus
+add botnat
+how trojen communicte and hide
+
+overt chennel
+which we people know like mp3,png etc
+covert chennel 
+which are hidden like website 
+
+trojens running ports;;
+2 death
+80 executer
+21 balde runner
+1095 rat
+2023 ripper
+etc..
+
+port listen:commnicate with another system
+
+in windows::
+ netstate /?(like help)
+ netstate -ab|more
+ netstate -aon |more
+ above 2000 PID consuint more spaces
+ 
+ clues 
+ ctr+alt+del not working
+ random starts
+ antivirus not working disable u cant enable
+ task bar disabled
+ in search we get different websites
+ mouse key reverse
+ hidden behind legimate software
+ 
+ infections::
+ create your monster
+ byusing trojen horse
+ or either write some illegimate scripts
+ 
+ 
+ create trojen
+easy way to getting into computer
+phical access,via emial.fate applicatons
+torrent
+freeware
+VNC
+shrink wrapped
+
+evading anti virus::
+changing checksum
+
+write your trojen
+msfvenom in kali linux
+top 10 list
+like beast
+super dale
+notification trojen
+
+
+
+
+
