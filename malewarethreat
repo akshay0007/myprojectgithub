@@ -71,10 +71,58 @@ changing checksum
 
 write your trojen
 msfvenom in kali linux
-top 10 list
+
+
+
+top 10 list of trojen:::
 like beast
 super dale
 notification trojen
+proxy server trojen(victim server to trojen)
+FTP server trojen(uses port 21) full access of system
+VNC Virtual network computing, 
+http/https trojen uses port 43/443(traffic convert into base64)
+command shell common netcat(inbound and outbound connection create)
+documment trojen(transmit via mail)
+Email trojen
+number one ::RAT (remote access trojen)(example back orifice,netbus)
+
+
+Demo of Beast::
+
+Virus::
+virus execute every time os boots
+application launch activity virus
+it can tranismit via communcation media like extra peripherial drives
+
+
+worms::
+copy itself and spread ourself into system
+doesnt require human interaction denial of server attack
+example::: sql slammer based on prove of concept (slow down internet traffic/router crashed)
+
+
+type of virus and worms::
+file virus 
+cluster virus (modify entry set)
+boot sector virus()
+micro virus (micro in excel. transimit via email)
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
