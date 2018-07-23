@@ -107,6 +107,130 @@ file virus
 cluster virus (modify entry set)
 boot sector virus()
 micro virus (micro in excel. transimit via email)
+polymorphic (changing insertation order,rewrite itself)
+metamorphic
+cavity(file overriding,override host files)
+encryption virus
+camoflus(copy of exe file)
+shell virus
+file extension
+tunneling
+
+
+Life cycle of malware::
+creation
+replication
+discovery (detection)
+resolution
+purging
+
+in circle order clock vice
+
+set pharse
+infection phase
+replication
+needs an event
+setup
+startup
+TSR
+attack phase 
+corruption
+delete
+
+dns poisning
+web server hacking
+click jacking
+Search engine optimization
+
+emial headers::
+hoax-slayer.com
+
+malware detection::
+
+create worms and malware::
+tools::
+easy shamasy
+terabit virus maker
+IWMT
+
+investegation::
+ship dip
+doing in virtualization
+quarantine the network
+disable share folder
+
+tools for investgation::
+
+
+copy malware
+Bin text(product collect string values into binary files)
+UPX (collect compress method)
+
+hard to port::
+wireshark,
+sysinternals
+process explorer
+
+debug stuff::
+autorun
+IDA Pro
+
+
+online malware testing
+virustotal.com
+malwareprotectioncenter
+
+tools::
+tcpview
+autoruns
+driverview
+SFC(system file checker tools)
+
+virus discovery methods::
+scanning
+
+antivirus (checking signature string in database)
+code analysis
+integrity checking
+tripwire
+interceptors
+levels:
+antivirus
+plgin for sql ,exchange
+create policy for companey(policy for antivirus,malware)
+watch download
+update software
+attachment issues
+what's source
+KEEP INFORMED
+scan system daily
+check media
+popups
+chat files
+firewall and UAC
+
+
+server
+physical side
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
