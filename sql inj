@@ -3,3 +3,15 @@ LDAP
 there is firewall b/w webserver and database
 Drupal sql vulnerablility
 wordpress slq inj
+
+Types of sql injection
+error based
+union based
+blind based(types)
+  ask db for question (boolean based) 
+  just looking for certain time for executing(Time based)  
+  
+single character
+input senetization
+tautologies is important for sql injections
+ 
