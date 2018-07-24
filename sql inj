@@ -14,4 +14,52 @@ blind based(types)
 single character
 input senetization
 tautologies is important for sql injections
+
+union based injection
+comment in sql --
+query system object
+for sys in mysql 
+
+selct * from sys,table
+selct * from sys,column
+
+advance injection
+
+boolean based injection
+time based injection
+
+select * from table order by case when .. then .. else .. end
+ desc
  
+ using ascii tables
+
+tools::
+fiddler
+
+1==@@version-- version info after select
+current_user
+is_rolemember
+db_owner
+sysdatabases
+PWDCOMPARE
+
+select * from syslogins
+wherre pwdcompare('passwod',password)=1
+
+
+OPENROWSET
+by default it is off we configure it in 6 video of advance
+
+exec xp_cmdshell 'commd'
+by default it also off
+
+for on 
+exec sp_configure 'xp_cmdshell' ,1 RECONFIGURE
+
+
+SQL INJECTION FOR NETWORK RECONNAISSAN
+
+
+
+
+
