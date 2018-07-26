@@ -59,6 +59,30 @@ exec sp_configure 'xp_cmdshell' ,1 RECONFIGURE
 
 SQL INJECTION FOR NETWORK RECONNAISSAN
 
+denfending
+using query parms
+store procedure
+object relation mapper
+
+isolating database to network segmentation
+allow inbound ips in azure sql server
+ussing IDS and WAF
+
+URL SCAN TOOLS
+barracuda firewall
+cloud flare
+
+drupal 7 
+
+web site
+msdn.microsoft.com/library
+
+parameterize query
+inline sql query
+
+envasion tech..
+
+
 
 
 
