@@ -123,7 +123,7 @@ website::whitehatsec.com/sentinel_services/
 
 
 network segmentations::
-
+RDP(port:3389)::remote desktop protocol 
 
 
 
