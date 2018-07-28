@@ -1,0 +1,141 @@
+web server hacking
+web site: information is beautiful
+
+securobod ea game software hacking
+
+market web server
+apache
+microsft iis
+sun 
+nginx
+google
+ncsa
+other
+
+http requst processing in iis
+http sys
+svchost.exe
+applicationhost.config
+application pool
+
+web serer vs web application
+PaaS service (platform as a service)
+
+
+discovering web server risk
+reconnaissance phase
+footprinting
+
+crawling enumaration and directory traversal
+
+tools::
+crawling:
+netsparker
+enumaraton:
+burpsuite
+directory traversal:
+
+mirroring website:
+winHTTrack website copier
+
+rconnaissance and footprinting
+riskiq passivetotal (websites) for learing webhost
+reverse dns lookup
+
+http fingerprinting::
+nmap
+
+in html page refresh select n/w tab and chk response header
+for server info
+
+website
+w3dt.net(not accurate result provide)
+HTTPRecon(server fingerprinting)
+
+Social engineering::wired.com(website)
+find phone number
+discovery of find reverse lookup
+fabrication of empno.
+
+
+
+web server misconfiguration::
+internal leakage:
+elmah error handling library on asp.net
+
+google serch for asp lib errors
+inurl:elmah.axd filetype:axd 'error log for'
+
+debug setting::
+werkzeug python library expose in public 
+colin keigher blog post for debug misconfigure system for werkzeug library remote exection
+
+shodan search engine for web
+
+excessive access rights:
+serch on google
+inurl:ftp inurl:web.config filetype:config
+
+
+paper resarch : giac.org
+open file shares:an unexpected business risk  
+
+misconfigure ssl(troyhunt.com)
+do you really want bank grade security in your ssl.
+
+sha1 has week in ssl	ssl3 for grade security pass fail for ANZ bank group.
+
+
+how web server go wrong by misconfigure ssl protocol
+qualys ssl lab(web site for ssl security configure check)
+
+weakness in default configuration::
+drupal tools for security weakness search in sodan
+
+website
+defaultpassword.com (web site)
+
+
+Managing and hardning web server::
+
+PatchManagment::
+change =>update=>testing=>rollback=>schedue for update=>automate monitoring
+
+shodan search iis 6.0
+locking down services:
+
+
+website :: cve.mitre.org 
+webdev(web distrubting authoring and versioning protocol extension of http protocol) service running but not requires
+acunetix.com ::dynamic scanning web tools
+
+not open unnacessary ports on server
+ports ::
+http:80,
+mssql :1433
+Ntp:123
+tftp:	69
+Rdp:3389
+ssl :443
+
+
+website::whitehatsec.com/sentinel_services/
+
+
+network segmentations::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
