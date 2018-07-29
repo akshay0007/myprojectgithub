@@ -127,8 +127,9 @@ RDP(port:3389)::remote desktop protocol
 
 
 
-
-
+sandboxing::
+application pool creation
+shared hosting
 
 
 
