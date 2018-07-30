@@ -128,8 +128,50 @@ RDP(port:3389)::remote desktop protocol
 
 
 sandboxing::
+isolation of process is sandbox
 application pool creation
-shared hosting
+shared hosting with single host 
+logical sepreation of process
+
+website defacement::
+Dns hijecking
+
+HTTP response splitting::
+
+web cache poisoning::
+
+BRUTE FORSE AUTHENTICATION
+
+BURP SUITE(TOOLS)..
+first proxy setup
+tools::(for brute force)
+THC hidra
+brutas
+
+streamling tools:
+owasp zap
+fiddler
+netspark
+acunetix
+nmap
+
+hacking web applications::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
