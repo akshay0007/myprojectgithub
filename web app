@@ -1,0 +1,28 @@
+webAPP hacking
+components of web application security::
+presentation(browser)=>logic(webserver)=>data(database)
+
+in presentaion(crosssite sciripting,exploite weakness etc)
+
+qury string routings and http verbs::
+
+Routing:
+define actions
+
+discovery of client security constructs
+
+
+portection offered by browser::
+phishing sites;
+invalidated ssl certification
+weak cryptography rules
+mixed content
+reflected cross site scripting
+security headers
+
+what the browser con't defend against::
+params tempering(cookie,forms,headers,query string)
+persisting cross site scripting
+
+
+
