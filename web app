@@ -24,5 +24,15 @@ what the browser con't defend against::
 params tempering(cookie,forms,headers,query string)
 persisting cross site scripting
 
+tools
+net sparker for (spider)
+burp suit(forced browsing)
+(directory traversal)
+banner grabbing with wget/curl
+server finger printing(nmap,znmap)
+acunetix(discovery or devlopment artifect)(check web scanner)
+(dicovery of services via genrated documentation)
+CVE.mitre.org(drupal)(discovery framework)
+identifing vulnerable tragtes with shodan(shodanhq.com)(shodan tools)
 
 
