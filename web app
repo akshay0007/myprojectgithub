@@ -35,4 +35,33 @@ acunetix(discovery or devlopment artifect)(check web scanner)
 CVE.mitre.org(drupal)(discovery framework)
 identifing vulnerable tragtes with shodan(shodanhq.com)(shodan tools)
 
+tempering of untrusted data::
+OWASP(open web application security project) TOP 10 RISKS:
+AI INJECTION
+A2 BROKEN AUTHENTICATION
+CROSS SITE SCRIPTING
+ETC...
+
+Understanding Data::(something come outside of dir)
+request body
+request headers
+query string
+url routing
+changing http verb
+external service
+ 
+Parmerter tempering ::
+tools(fiddler)
+
+hidden form field::
+
+Mass assigment attack:
+Model binding 
+
+cookie poisoning:
+
+Insecure direct object refrence:
+
+defending against tempering
+
 
