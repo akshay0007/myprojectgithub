@@ -63,5 +63,8 @@ cookie poisoning:
 Insecure direct object refrence:
 
 defending against tempering
-
+assue malicious intent
+verify the server
+clinet persistent is dangerous
+whitlist allowable behaviors
 
