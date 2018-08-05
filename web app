@@ -68,3 +68,77 @@ verify the server
 clinet persistent is dangerous
 whitlist allowable behaviors
 
+
+
+Attack involving client
+
+cross site scripting(XSS)
+oauth
+Dom 
+persistent cross site scripting
+content security browser header
+
+
+
+encoding for right context
+flag cookies as http only
+identifing risks and evading filters
+
+xssposd.com(website)
+xssfilter evasion cheet sheet
+owasp.org(website)
+client only validation
+insufficent transport layer security
+
+PCI seurity standards
+
+TLS 1.2 latest version of TLS instead of ssl strong cryptograhic algo
+
+fiddler scripts
+key logger(javascipt injection)
+
+cros site request forgrey(csrf)	
+
+Authcookie
+anti forgery token
+
+
+
+attack against identitiy mgt and access control
+web application take more to calculate for hashing
+
+Deniel of service attacks
+n/w resources not avl
+distrubuted denial of service(DDOS)
+botnet
+
+norsecorp.com(website)	
+LOIC(low orbit ion canon)(tools)
+DNS reflection attack (dns query )
+amplicafication attack (request largewait )
+NTP attack(spoof packet sending)
+SNMP attack
+SYN flood attack
+RDP session
+
+
+cloud flare model
+
+improper error handling
+
+insecure cryprographic storage:
+salt sha1 has
+
+
+hashcat(tools)
+hashcat(website)
+
+
+owasp.org cheet sheet(website)
+
+unvalidate redirects and forwards
+
+exeception handling module in asp elmah
+
+
+
