@@ -1,0 +1,160 @@
+session hijeck
+playing the role of victim.
+
+TYpes::
+Application level::session id sniffing/fixation/donation/brute force
+
+Network level::Tcp level/blind hijeck/session sniffing/Ip spoofing/UDp hijeck
+
+
+Attack vector::
+man in middle attack(dns spoofing)
+man in browser(malware)
+brute forcing
+cross site scripting
+session id leakage
+
+Impact of session hijeck::
+
+OWASP top 10 (owasp.org(website))
+
+session persistent in web app::
+
+stateless nature of http::
+
+
+persistent state over http:
+
+
+sessionid
+token
+authcookie
+
+session persisten in cookie
+cookie automatically persistent
+cookies are not logged in request
+it is still valid after closing browser
+
+risk at cross site request forgery
+only one active session
+
+session persistent in url::
+session persistent in hidden field::
+
+hidding session in web application::
+
+
+hijacking cookie with cross site scripting::
+exposed cookie based session id in logs
+exposed url based session id in logs
+leaking url persistent in the reffrer
+
+session sniffing:
+session fixation:
+
+brute forcing session ids:
+session donation::
+
+session hijecking in n/w and client end:
+tcp::
+run under http/s 
+three way hand shake
+
+TCP hand shake(with sequench no)
+synch-->seq and ack==0
+synch +ack<---seq=0 and ack=1
+ack-->seq=1 and ack=1
+
+data sending
+get/:seq=1 ack=1 len=120bytes
+301 redirect/:seq=1 ack=2 len=121bytes len=70bytes
+get login/:seq=121 ack=71 len=130bytes 
+
+
+wireshark(tools) data packet analysis
+
+sequenc no. is pseudo number
+
+BSD unix
+
+websites
+iss.net
+description.securescout.com
+
+
+Blind hijecking
+predict sequence no.
+
+man in middle session sniffing
+
+Arp spoofing
+
+IP spoofing
+
+
+UDP hijacking
+no handshaking
+packet send and forget
+VOIP
+
+man in browser attack::
+effect browser with trojen
+extract data from dom
+(like cookes.data)
+
+
+network level session hijecking in the wild
+steps::kevin mitnick(hacker)
+1:finger ,showmount, rpc info
+video session hijecking 3 module 9 video
+
+
+mitigating the risk::
+
+use strong session id
+
+SessionIdManger class in asp.net
+
+keep session id out of url:
+
+don't use session id for auth
+
+not attach auth on session id
+
+always flag session id cookies as http only
+
+use transport level security
+
+
+transport layer security
+man in middle sniffing cookies
+dns poisoning
+reffere header is not send
+
+always flag session id cookie as secure
+
+session expiration and using session cookies:
+
+session expiry::
+sliding of session expiry
+
+absolute expiry::
+
+encourage user to logout::
+
+reauthenticate before  key action::
+
+
+automating session hijecking:
+
+tools::::
+owasp zed attack proxy(ZAP) project:
+Burp suite
+netsparker
+secureitem.com/tools(website)
+juggernaut
+hunt
+packetstormsecurity.com(website)
+ettercap
+
+
