@@ -1,0 +1,117 @@
+reconnaissance footprinting::
+gathering more information:
+
+types of recon::
+passive ::public avl source like web sites etc
+active::
+anonymous::
+orgnization/private::
+internet::
+pseudonymous::
+
+network info::
+domain name:
+internal domain:
+IP address
+unmoitor/private websites
+tcp udp service
+ids/access controler
+vpn info
+phone no.
+
+
+operating info.
+user group info
+banner grabbing
+routing table
+snmp
+system arch
+remote system
+system names
+passwords
+
+organization information:
+
+
+tools::
+search engines:
+whois
+ping & DNS
+
+website
+hackthissite.org
+HTtrack(tools)
+webmaster-toolkit.com(website) iinkextractor
+
+whois.domaintools.com(website)
+whois(tools)
+
+
+using ping dns::
+ping
+tracert(tools)
+ICMP request
+nslookup(tools) compare domain name with ip address.
+
+mx(mail server)
+a record
+cname (alias)
+soa(start of authority)
+
+zone transfer
+TTL (time to live)
+
+set type=soa
+
+posioning of dns::
+
+in windows
+c:windows/system32/drivers/etc>notepad hosts
+
+change ipaddress to new domains
+like 
+x.x.x.x google.com
+
+
+tools
+netcraft (website)
+the wayback machine
+web.archive.org/web(website)
+
+peoplesmart.com(websites)
+
+
+dumpster diving
+shoulder surging
+eavesdropping
+impersonation
+
+mails header info::
+email tracking mail
+
+reconnaissance via google sarch:
+google queries
+Google hacking database(web site)
+exploit database(web site)
+
+johnny long(hacker)
+tools
+Goolink scanner(tools)
+google hack honeypot(tools)
+diggity tools
+search diggity(tools)
+gooscan(tools)
+metaGoofil(tools)
+sitedigger(tools)
+
+
+configure your router:
+ssid for router
+ids system
+reconfigure web server
+
+dns info::
+
+
+
+	
