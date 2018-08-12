@@ -1,0 +1,154 @@
+denial of service>>>>>
+distrubuted dinal of service attack.
+
+HSBC fight off denial of service attack internet bank service 
+
+norsecorp.com(web site)
+botnet(tools)
+
+DDOS::
+ddos in gaming services
+GCHQ sercet (snowden leak)
+
+slashdot effect
+
+
+OSI model of computer n/w
+1:physical	bit
+data link	frame
+n/w		packet 
+transport	segemtn(tcp)/datagram(udp)
+session		
+presentation  
+7:application  	data
+
+genrall check 7 and 4 for ddos
+
+
+role of botnet in ddos
+cnc server
+
+http flood attack::volumatric attack
+can staturate server resource
+can statureate bandwidth
+syn flood attack:
+
+three way hand shake
+syn->
+syn +ack<-
+ack->
+
+in dos (ack in third step not transfer)
+
+layer 4 attack usess udp and icmp protocol
+udp ==>flooding random ports on target
+
+source ip is spoof due to no handshek
+icmp(internet control message protocol)
+ping uses echo request echo replay
+
+"smurf attack"(tools smurf)
+icmp ping of death create buffer overflow
+
+
+DNS amplification attack:
+
+smiple n/w mgt protocol
+n/w time protocol
+ssdp(simple service discovery protocol)
+all are runs of udp protocol
+response is large as  compare request
+
+peer to peer n/w
+
+DC++(tools)(free p2p open source file shareing client)
+
+slowloris (tools)attack:
+low volume of request
+send uncomplete get request:
+
+
+permanent dos and phlashing:
+replacing firmware:
+bricking to device
+
+Github man on the side attack:
+greatFire.org
+cn-nytimes
+baidu analytics(chiness search engine)
+
+
+www.pastebin.com(website)
+incapsula client's ddos attack.
+
+cutwail(tools)
+
+tools::
+n/w stress testing
+LOIC (loc orbit ion cannon)(tools) create in c#
+JS LOIC
+booters and stressers
+
+booter.xyz(website)
+
+legitmate load testing tools
+loader.io(website)
+
+TOOLS:
+doshttp(tools)
+ihackers.co(website)
+php dos/ddos(tools)
+thehackerstores.net(tools)
+
+defending against ddos::
+looking into application and network stack (level 4 and 7)
+
+defensive consideration:
+
+discover dos attack pattern:
+attack type
+udp,tcp,icmp smurf attack(4)
+http (7)
+
+are they any uniques:
+headers
+target resoures:
+
+establish intent
+
+absorbing attack
+capcity>attack
+auto scale
+
+establish traffic reputation
+cloudflare(tools)
+
+
+network level defence::
+
+corero hardware device(tools)
+disable unused port
+block unnecessary protocol(like icmp)
+filter ingress traffic
+	repution block based 
+implement blackholing and trapitting
+
+AnyCast(n/w address and routing methodology)
+
+cloud flare mitigation for ddos
+
+Application layer defences:
+
+web application firewall can inspect http traffic
+
+
+load balancing
+
+
+Cloud flare model::
+
+preparing for ddos resiliency:
+
+d/dos runbook
+d/dos incident reponse plan/runbook
+
