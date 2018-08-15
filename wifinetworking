@@ -1,0 +1,458 @@
+networking>>>
+ISDN
+sector based antena
+omni and sector based antene
+WIFI::
+types of wifi:
+standard:
+authentication:
+chalking:
+antenna:
+
+termnology::
+frequency hopping spread spectrum(FHSS)::
+hedy lamrr(actoress and inventer)
+irregular frequency 900mhz-2.5ghz 
+not very fast
+
+direct squence spread spectrum(dsss):
+
+FCC:
+
+frequency hopping
+
+basic servic set identifier(BSSID)
+conist mac address of access point
+
+BSS-table
+
+ssid(service set id) :32 alphnumeric character
+attached each headers of wireless packets
+multiple access point
+
+Disadvantage::
+security
+bandwidth
+upgrades
+interference
+
+
+types of wifi n/w:::
+extension to n/w
+	access point
+lan 2 lan n/w
+multiple access point n/w
+cellular access n/w
+	pcmcia cards
+
+
+wifi standards:
+line of sight
+
+fresnel zone(cannot block more then 40 %)
+
+ieee standards:
+802.11c
+--a
+--b
+--g
+--n
+--ac max speed
+802.16(wimax)
+bluetooth
+part 4 wifi
+
+
+wifi authentication::
+open vs shared
+open system authentication
+
+ssid of computer match with wifi ssid
+///connecting to n/w
+
+probe request<---
+probe response--->
+open sys auth ,rqu<--
+open sys auth,resp--->
+assos requ<--
+assos respon-->
+authen req<---
+challenge text--->
+
+shared key
+<---encrytp channlege txt--
+---decrypt challenge txt good auth client--->
+
+<-----connet to n/w<-----
+
+wireless threat::
+shared key
+
+
+identify n/w
+chalking:::deprecated tech
+war walking
+war flying
+war driving
+war crawling
+
+leave behind some symbols for another community person
+
+symbols
+node (open closed)
+)( o
+encyrption used
+speeds
+ssid
+filtering
+
+antenna types::
+omni direction(transmit 360 degree horizontally less powerful)
+vertical omni direction 
+both depend upon wiring
+
+direction antenna(varous degree 40 90 180) powerful then omni
+by using sheet mattle it increase signals
+
+parablic grid (10 + miles) more powerful
+less angle more bandwidth
+
+yagi
+extremly focus connectivity/used for huge distance
+used reflactors,direcotors,driven element
+used small pattern
+used microweave technology /low frequecy
+
+
+
+
+
+encryption in wireless:
+wep encription /wpa wpa2/beraking encrption/defending against
+
+wep encription:(wired equivalent privacy)
+protect from eavedropping
+prevent unautherize access
+keys
+
+goals:
+gain access
+confidetiality
+data integrity
+efficency
+
+no review via public
+pre share key issue
+
+used RC4 encription same key used for decription
+
+wpa:::wifi procted access
+uses tempory key integrity protocol(TKIP)
+wrap code aroud wep
+unique keys for each frame
+
+wpa2::
+aes algo.
+ccnp (counter cipher mode and block chain autheniction build protocol  ) replace tkip
+
+wpa-personal
+uses psk(pre share key)
+uses 256 bit key	
+8-63 asiii using for passphares
+wps (wifi protected setup)
+
+wpa-enterprize
+uses eap or radius
+uses name ,pass,token card,kerberos,certs etc.
+AES-CCMP which is stroger then RC4
+
+802.1x(framework)
+uses user and machine auth/port based controls
+
+breaking encription::::
+feeble initialization vectors or ivs
+
+initalize vectores wep has:
+rc4 
+key scduel algo
+first few bits are clear txt
+initailze vector reuse
+appended to keys make it susceptable to FMS attack
+aircrack,airsnort(tools)
+airplay-ng(tools)
+
+
+wpa psk is tougher
+de authenentication attack
+kismac,reaver(tools)
+
+
+types of attack::
+data frame injection
+data replay 
+wep injection
+iv(initialize vector) replay
+bit fipping
+EAP 	Replay
+RADIUS REPLAY
+WIRELESS N/W VIRUS(EXAMPLE chameleon)
+
+
+confidentiality attacks
+honeypot aps
+sessoin hijecking
+traffic analysis
+eavesdropping
+masquarding
+MITM(man in middle attack)
+creacking wep
+evil twin access nw point
+
+
+
+Availablity attack
+AP theft
+DOS
+auth flood
+disassociation
+deauthentication flood
+ARP posioning
+routing attack
+EAP failure
+power saving attack
+beacon flooding
+TKIP MIC exploit
+
+
+
+Authentication attack
+ID theft
+PSK cracking
+VPN login cracking
+DOmain login cracking
+Password assumption
+app login theft
+
+
+
+Attacks on access point
+rogue access point
+
+unauthorize association
+
+
+Honey spot ap attack
+
+AP mac spoofing
+
+
+attacks on client::
+denial of service
+(dos attack)
+adhoc attack
+jamming 
+
+	
+
+methodology of hacking wireless::
+
+wifi discovery
+looky-loo
+footprinting
+build in wifi ,extern antenna, application
+
+inSSIDer(tools)
+netsurveyor(tools)
+vistumbler(tools)
+wigle.net(website)
+kismet(tools)
+istumbler(tools)
+mobiles:
+wi-fifofum(tools)
+network signal info
+wifi rader
+ministunner
+wifi analyzer 
+
+
+wardriving
+GPS(global positioning system) mapping::
+wigle(tools)
+skyhook(tools)
+wefi
+
+wifi traffic analysis
+authentication attacks
+id vulnerablilities
+reconnasissance
+
+cool tools:
+wireshark
+airmagnet
+omnipeak
+airsnort
+
+
+understand the card
+card brand
+chipset brand
+capablility
+drivar avalilblity
+pcmci(card)
+
+airpcap(adapter)
+multichennel
+injection feature
+cain & able,wireshark,aircrack-ng
+
+acrylic(card)
+
+launching attack
+aircracking(tools)
+airbase-ng(tools)
+aircrack-ng(tools)
+airdriver-ng(tools)
+airdrop-ng(tools)
+airplay-ng(tools)
+eassid-ng(tools)
+airodump-ng(tools)
+airgraph-ng(tools)
+airolib-ng(tools)
+airserv-ng(tools)
+airmon-ng(tools)
+airtun-ng(tools)
+packetforge-ng(tools)
+tkiptun-ng(tools)
+wesside-ng(tools)
+airdecloak-ng(tools)
+airdecap-ng(tools)
+
+netstubller(tools)
+
+find hidden ssids::
+airdump-ng wlan1
+airdump-ng -c 6 --bssid x wlan1
+airplay-ng ---
+
+
+cracking wifi encryption
+aircrack-ng(tools)
+kismac(tools)
+
+killerbee(tools)
+bluepot(tools)
+blueranger(tools)
+redfang(tools)
+wifi honey(tools)
+cain & abel(tools)
+usbdoggle(tools)
+cloudcracker(tools)
+reaver(tools)
+
+how much danage can we do::
+wps
+
+reaver -i interface name -b bssid 
+airmon-ng start wlan1 or either wlan0
+airodump-ng mon0
+reaver -i mon0 -b bsssid -vv
+airmon-ng
+airmon-ng start
+airodump-ng mon0
+airodump-g -c 11 --bssid -w /root/desktop/mon0
+airplay-ng -0 2 -a bssid -c station mon0
+aircrack-ng -a2 -b bssid -w /root/dic.txt /root/desktop/*.cap
+
+
+going mobile
+peNtrate pro
+bcmon
+reaver
+ispeedtouch
+wifiaudit
+iwep pro
+
+hacking bluetooth:::
+
+the threat:
+
+bluejacking(sending message)
+bluesmacking(dos buffer overflow)
+bluesnarfing
+blue priniting(footprinting method)
+bluebugging(gain access and full access AT level commands)
+MiTM(man in middle)
+mac spoofing
+
+PicoNet(ad hoc nw)
+PiTM
+
+
+Countermeasures:
+bluetooth
+Rogue access point
+6 layers of wireless
+
+bluetooth
+
+Rogue access point
+AP scanning
+wireless intrusion prevention system
+RF scanning
+
+
+Layers of wireless:::
+wireless signals
+ RF spectrum
+ IDS
+Data protection
+ WPA2 and AES
+Device Security
+ update/patches/vulnerablities
+Connection level
+ pre packet auth
+ centralize encription
+N/W protection
+ strong auth
+End users 
+ a user firewall
+
+Best practices::
+configuration
+ change default ssid
+ change default username and password
+ disable ssid broadcasting
+ disable remote login/wireless
+ administration
+ enable mac filtering
+ change passphrase
+ 
+Authentication::
+ WEP
+ update driver
+ centralize auth server
+ turn off when are not using
+ secure physical side 
+ 
+SSID settings
+ use ssid cloaking(hiding ssid)
+ firewall/packet filter=>network
+ checking setting after firmware update
+ limiting signal strength
+ think about other encryptions(IPSEC?)
+
+
+TOOLS:
+WIPS(wireless intrusion prevention system)
+cisco discovery protocol
+
+s/w
+airmagnet
+zenworks
+airTight
+openwips-ng
+
+h/w
+Bat
+
+
