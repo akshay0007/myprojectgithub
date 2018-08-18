@@ -1,0 +1,74 @@
+
+
+ARP(address resolution protocol) poisoning::
+AARP review
+resolving phiscal address to ip address
+arp cache
+arp spoofing(posioning)::
+malformed arp response
+overload the switch
+overload results in a new mode
+flood the target
+adding flooding entries into arp tables
+tools::
+dsniff(tool)
+filesnerf(tool)
+arpspoof(tool)
+ettercap(tool)
+cain & abel(tool)
+
+
+danger of arp::
+dos
+packet sniffing
+voip tapping
+man in middle
+session hijacking
+data interception
+
+dynamic arp inspection(DAI)
+dhcp snooping
+static arp table
+ARPWatch(tools)
+
+
+Dns poisoning::
+intranet poisoning
+tools::
+arpspoof(tools)
+dnsspoof(tools)
+cain & abel(tools)
+etthercap(tools)
+
+
+internet posoing::
+chage hosts setting
+
+proxy server posonig::
+
+posisoning the cache::
+
+countermeasures::
+
+detecting sniffing::
+catch and read every packet
+detection via ping
+via arp
+dns sniffing
+
+super top 15::
+encryption
+static mac for gateway
+physical access  
+upgrade to ipv6
+static ip address
+static arp entries
+https
+sftp
+vpn/ipsec
+ssl/tls
+wireless security
+direct mac retrieval
+tools
+
+nmap(tools)
