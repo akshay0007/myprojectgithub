@@ -1,0 +1,298 @@
+network scan::
+find host via ping.
+see os
+pick up ips
+
+port scan::
+ip address+protocol
+example::192.168.0.15+http
+80 for http 443 https
+65535 ports and 1023 port consider
+53::for dns
+
+objective::
+find live hosts
+ip addresses
+open/closed ports
+os & architecture
+vulnerablity & threats
+security risks and services
+snmp(services)
+
+different strokes for different technologies
+netcraft(tools)
+
+tools are used::
+command line(tools)
+nmap(tools)
+angrey ip scanner(tools)
+solarwinds(tools)
+colasoft pings(tools)
+visula ping tester(tools)
+nessus(tools)
+
+understanding 3 way handshake
+tcp udp communication
+tcp headers flags
+normal 3 way handshake
+
+						
+tcp udp communication:::
+tcp::
+nagotiate connection
+delivery acknoweldge
+retransimission/error detection
+in order delivery
+congensention control
+bigger header(20 bites)
+stream oriented
+
+UDP communication::
+connection less
+smaller packet 8 bytes
+only one packets goes
+out of order
+no congenstion control
+messge oriented
+appliction used udp::
+
+dns,dhcp,tftp,snmp etc
+
+
+Tcp header flag
+syn(synchronize includes a seq)
+ACK(acknowledgemnt)
+FIN(finish)
+PSH push
+URG urgent
+RST reset
+
+normal 3 way handshake
+
+syn 101-->
+syn ack<-- your 102 my 508
+ack--->your 509 my 102
+FIN:->
+ACK/FIN<--
+ACK--->
+
+wireshark(tools)::::::::
+
+SYN /SYN-ACK/ ACK
+FIN /ACK-FIN/ACK
+
+ICMP sweep
+angrey ip scnner(tools)
+nmap(tools)
+hping2/hping3(tools)
+
+firwealking:::
+it uses TTL(time to live)
+define a firewall ACL
+forward=open port
+dropped=closed port
+
+standard traceroute:::
+
+
+types of scanning::
+full
+half
+xmas tress
+fin 
+null scan
+udp 
+ids evasion method
+
+
+full scan:::
+syn+port->
+syn+ack<-
+ack+rst->
+
+half scan(stelth scan)==
+
+xmas scan(does't work on windows)::
+fin,urg,push-->
+nothing<--means port is open
+if 
+rst<--port is closed
+
+fin scan(not works for windows)
+fin-->
+no response<--port is open
+or
+rst/ack<--port is closed
+
+
+null scan(for unix only )
+tcp packet/no flag-->
+no reponse<--(port is open)
+else
+rst/ack<---(port is closed)
+
+
+
+udp scan::
+advantage::
+no handshake
+harder to monitor
+frames are larger
+
+disadv::
+port data only.
+
+
+is port 31 open-->
+no response<--port is open
+else
+icmp port is unreachabel<--port is closed
+
+evading ids system wiht ids scan::
+idle scans
+uses tcp port scanning method but spoof source address
+find zombie machine
+
+1st
+syn/ack-->
+rst/ipip=2001<--port is open
+
+2nd
+syn port 80 /from zombie(zoombie to target)-->
+syn/ack to zombie<--(port is open)
+rst(ipid=2002)-->
+
+rst<---(closed port)
+
+3rd
+syn/ack(attacker to zombie)-->
+rst/ipid-2002<--(port is closed)
+
+ip fragments::
+
+
+countermeasures::
+firewall configure to look for syn scans
+ids should detect snort/nmap
+open only require ports
+filter icmp massages
+test your n/w
+keep your firewall /ids updated patched
+
+banner grabbing & os fingerprinting:::
+
+os fingerprinting::
+os fingerprinting attempt to determine the host via packets
+types::
+1:active
+2:passive
+
+
+demo of nmap::::::
+banner grabbing":::
+tools:
+netcat(tools)
+xprobe(tools)
+pOf(tools)
+ncat(tools)
+
+using telnet and netcat:::
+
+countermeasures::
+misdirection/fake banner
+iis lock down tool
+server mask
+turn off unused service
+change the serversignature(httpd.config for apache)
+speaking of httpd.config:mod_headers
+
+vulnerablity scanning and drawing out of network:::
+
+lookat::
+network system
+computer 
+operating system
+application
+
+types of scanners::
+n/w based scannner:
+web server
+port
+web app
+
+host based::
+designed for specific host
+look for sign of pernetration
+perfroms baselines checks
+
+
+vulnerblity scanning works::
+rogue system
+verify invetory
+web.nvd.nist.gov(website)
+
+
+Gears of vulnerablity::
+
+vulnerablity scanner tools::
+
+Nesssus(tools)
+core impact pro(tools)
+MBSA mircosoft baseline security analysis(tools)
+GFI Languard(tools)
+Retina(tools)
+Saint(tools)
+
+whatsup gold(tools)
+the dude(tools)
+opmanager(tools)
+networkview(tools)
+lansurveyor(tools)
+friendly pinger(tools)
+
+prepareing proxyies and other anonymitize techniques:::
+
+what is proxy::
+hide there identity from firewall
+work behalf of another system
+filter undesirable content
+anonomous id on website
+NAT ip address for the outside
+save bandwidth
+proxy server
+
+why use a proxy:::
+hide the attacker ip
+mask the actual source
+access internet data
+misdirection
+help create proxy chain
+
+how to use proxy:::::
+
+proxy o'planty
+proxifier(tools)
+sockschain(tools)
+fiddler(tools)
+the onion routing (TOR(tools))
+proxy switcher(tools)
+proxy workbench(tools)
+
+HTTP tunneling:::
+vpn tunneling
+http tunneling server
+
+
+Anonymezier:::
+circumvent ids and firewall rules
+get to restricted content
+protection from online attacks
+privacy
+
+toools:::
+U-surf(tools)
+G-zapper(tools)
+mowser(tools)
+warpproxy(tools)
+hidemyip
+hide your ass
