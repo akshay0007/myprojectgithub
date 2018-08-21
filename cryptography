@@ -1,0 +1,52 @@
+learning cryptography::
+confidentitality
+integrity
+availablity
+watch the entire sscp cryptography
+Application security
+Main topic    ::::how to find
+cryptography concept
+encryption algo
+encryption tools
+public key infrastrure
+email encryption
+disk encryption
+cryptography attacks
+crptanalyiss tools
+
+additonal cryptiographiy tools::
+goverment access to key
+DSA(digital signature) and related signature schmas
+pretty good privacy
+side channel attack
+
+federal information processing standard(FIPS 186-4)
+key genration in two phase
+creating a public and private key
+
+elleptical curve algorithm
+electronic key genration every time when sending information
+so another user cannt find
+
+pretty good privacy::
+often used for secure disk,mail etc
+
+SIDE channel attack:::
+attacks on algorithm how it implemented
+attacks::
+power consumption
+mesuring variation in electomagnatic field
+acoustic attacks exploit sound emiision such as from key board
+
+
+Advanced study:::
+what is ssh(secure shell)
+hashing tools- get myfilehash
+addition tools in the document
+
+	
+hash tools
+cryptography tools
+disk encrytpion tools
+cryptanalysis tools
+
