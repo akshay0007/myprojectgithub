@@ -1,0 +1,116 @@
+cloud computing:::
+characterstices of cloud computing
+on demand self service
+broad n/w access
+resouce pooling
+rapid elasticity
+measured service
+
+understanding IAAS,PAAS and SAAS(infrastructure,platform and s/w as a service)
+
+cloud deployment model:::
+private cloud
+public cloud
+community cloud
+hybrid cloud(spread footprint public and private)
+
+cloud computer arch::::
+cloud consumer
+cloud auditor
+cloud provider
+cloud broker
+cloud carrier
+
+
+promise of cloud:::
+low barrier to entry
+elasticity
+cost reduction
+flexiblity
+security
+
+
+is the cloud secure:::?
+
+
+
+organization security consideration:::
+
+data sovereingty::::
+
+server monkey
+
+shadow IT::
+what cloud res in org
+who is creating them
+who is using them
+do they adhere with compliance and security policies
+what business problem do they solve
+can u address underlying problem
+
+cloud computing risks::
+creaditial reuse
+session hijecking
+exposed keys
+social engineering
+
+engress and agress data
+
+hypervisor -breakouts:::::::
+peace of s/w ,hardware,and firmware it create and runs virtual machine
+
+resource pooling
+
+physical infrastrure-->virtualize layer-->logic infra.-->operating system--->application
+
+arstechnica.com(website)
+
+malcious cloud uses::
+DDOS
+password cracking
+botnet command and controler
+captch solving
+
+resources.infosecinstituel.com(website)
+
+Row hammer
+
+motherboard.vice.com(website)
+
+
+cloud computer security strength::
+
+
+cloudflare.com(website)
+
+
+server adminsitrator as a service:::
+
+
+Azura active directory
+
+
+Vnet on demand:::
+	
+hardware security modules
+
+
+securing the adminstrator portal::::
+
+hardning the configuration:::
+
+securing the transport layer::::
+vpn create encrytped tunnel..
+
+sql injection alerts in azura:::::::::
+
+
+security as a service::::
+barracude firewall(hardware tools)
+
+
+			
+
+
+
+
