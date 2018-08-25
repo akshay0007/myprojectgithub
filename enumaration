@@ -1,0 +1,221 @@
+enumaration::
+looking at traget expose
+	routing table
+	auditing
+	applications
+	dns and snmp info
+username
+groups
+machine names
+n/w resource
+service name
+
+tech of enumarations::
+email/businness cards
+
+DNS zone transfer
+brute force active directory
+default password
+snmp
+
+know your port and services:::
+dns zone transter
+	tcp 53
+smtp
+	tcp 25
+microsoft rpc endpoin 	
+	tcp 135
+
+global catalog serverces
+	tcp/udp 3368
+
+net bios naming service
+	tcp 137
+LDAP
+	tcp /udp 389
+smb(server message block) over netbios
+	tcp 139
+SNMP(simple n/w mgt protocl)
+	upd 161
+smb over tcp
+	port tcp 445
+
+
+default is your biggest secc issues::
+
+what is netbios:::
+n/w basic input o/p system
+
+using build in commands
+using ping,nbtstat and net
+	check connectivity and routing
+`	pull computer names
+	view shares
+	services
+
+command help
+like >net /?
+
+
+pulling sid and user account::
+commands:::
+cls(list of accounts)
+user2sid (commands)
+dsget group
+
+netbios enumapration 
+tools superscan(tools)
+
+enumarting via snmp::
+
+what is snmp(simple n/w mgt protocol):::
+vesion 1
+vesion 2
+vesion 3
+public public
+private private
+vesion 4
+restrict to user access
+data encryption in transient
+more complex to configure
+common issue disable v1/v2
+
+MIB(mgt information base)
+is a virtualize database contains offical exmplanation of all n/w objects
+
+mib hirarchi ::each mang object in mib is address via oid
+
+used by snmp to conver oid(object identify number) number to simple plain text
+
+
+solarwinds(tools)
+pull ups ips,
+network device,server name /os
+
+enumaration g via LDAP::
+NTP(n/w time protocol)
+synchronize time on all n/w system
+ports:
+udp (123)
+
+what can we do with ntp::
+list of hosts
+ip address
+system names
+operating system
+
+using ntp commands
+ntptrace (commands)
+ntpdc (commands)
+ntpq (commands)
+
+
+enumatration via smtp server::
+simple mail transfer protocol
+netscantoolpro(tools)
+
+protocol delivering email
+dns uses mx records via dns
+uses MTA for routing
+behind smtp::
+port 25
+587 submission
+
+commands::
+MAIL FROM
+RCPT TO
+DATA
+VRFY
+EXPN
+
+NetScanTOolPro(tools)
+smtp_user_enum(command)
+
+cenus.gov(website)
+nslookup(commands)
+
+
+enumaration via dns:::
+(domain name system)
+NSlookup(tools)
+DNSRecon(tools)
+record lookup
+cache snooping
+google lookup
+reverse lookup
+zone walking
+zone transfer
+
+behind dns::
+ports::
+udp 53
+tcp 53
+
+records::
+A
+AAAA
+CName
+MX
+NS(name server)
+SOA(start of authority)
+PTR(pointer lookup)
+SRV(service records)
+
+using nslookup and dnsRecon::
+discover records
+zone transfer
+reverse lookup
+domain brute force 
+zone walk
+cache snooping
+
+
+Bind(tools dns utiltiy)
+							
+pentest-tools.com(website)
+Enum4linux(commands)
+
+linux RST -B(malware)
+FreeBSD's os
+Grinch(bug in linux)
+
+enumarating linux::
+user
+	home dir,logon times,and more
+environmental information
+groups
+os info
+
+
+counter measures:::
+default & netbios
+snmp 
+ldap 
+ntp
+smtp
+dns
+
+default & netbios::
+turn off smb
+block port 161 on tcp/udp
+IPSec filtering
+limit access to null session
+counter mesures for ldap:::
+separta email address and logon names
+use ssl to encrypt ldap
+encrytp drives that stores ldap databases
+countermesures for ntp:::
+watch u'r ports
+understand what s/w are installed
+check ur ntp master
+
+countermesures smtp::
+disable openrelays
+drop unknown recipients
+never inculde email server info in ur email and ports
+
+coutnermesures for dns::
+configure dns zone transfer to explicit server
+check both interanl and extenral dns server
+HINFO records do not appeare in dns zones files
+
