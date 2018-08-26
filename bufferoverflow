@@ -1,0 +1,367 @@
+buffer overflow:::
+
+what can we do with buffer overflow
+data exfiltration
+information corruption
+program or os crash(denial of service)
+
+why do buffer overflow:::
+overflow or overrun
+underflow or underrun
+
+integer overflow
+
+local denial of service
+remote denial of service
+	flood of n/w,n/w access,vulnarablity
+
+programs running with higer privalages have more capablilities::
+	open n/w ports
+	start commands shell
+	reconfigure system
+	add user account
+arbitray code execution
+information corruption
+change in prog flow
+operational instablity
+abnormal termination
+command(C&C,c2) and control
+C&C c2
+c2 used by malware and botnet
+c2 malware
+
+
+how do you keep buffers from overflowing
+mitigation
+safeguard
+
+prgrammers
+system adminstrator
+	find vuln. program,patch them ,remove
+users
+
+
+countermesures
+
+inside process memory
+process adress space
+
+inside process memory:::
+code->data->heap->stack
+
+fixed and dynamic memory:::
+stack and heap change size on memory assign
+
+
+inside the stack::
+stack overflow causes::
+process crash
+data leakage
+arbitrary code exe
+
+stack is meemory buffer
+temp store data
+data may be use now or used later
+queue data structure
+
+LIFO or FIFO
+
+push(add) and pop(remove)
+
+the stack pointer
+
+stack pointer(SP)
+
+stack frames:
+
+stack in the code:::
+
+pointers::
+pointer is a data variable store a memory address.
+
+stack pointer
+frame pointer 
+base pointer
+instruction pointer
+instruction counter & program counter
+register are didicated areas of cpu memory
+
+morris worm
+code red worm
+
+NOP or NO-OP (no operation exe)
+
+shellcode::
+
+shell code can be any type of program
+server(ftp,telnet,ssh,irc,http), monitor(sniffer,keylogger)
+
+shellcode type::
+port binding(bind shell)
+	n/w port open 	
+reverse
+	open n/w connection
+command exe code
+file transfer
+find socket
+kernal space
+multistage
+process injection
+system call proxy
+
+Heap memory::
+
+Heap chunk::
+type of chunk
+size of chunk
+memory address of each chunk
+memory address of next chunk
+
+Heap overflow and overrun::
+
+heap sprey::
+
+
+function pointer::
+
+SEH:structure execption handling::
+code red worms
+
+
+finding buffer overflow::
+host based security system
+
+network security admin
+
+n/w intrusion and prevention system
+
+malware::
+code red
+nimda
+sasser
+L10n
+
+morris worms(1988)
+fingered(tools)
+code blue(malware)
+code green(malware)
+nimda(malware)
+bolgimo(malware)
+sql slammer(malware)
+sasser(malware)
+
+unix /lnux::
+L10n worm
+Ramen worm
+Telnetd(X.C worm)
+
+morm worms and malwares::::::::
+stuxnet
+duqu
+falme
+cryptolocker
+zeus banking trojen
+heartbleed
+GNU Glibc
+
+
+Vulnerablity Databases::
+cve.mitre.org(website)
+nvd.nist.gov(website)
+cwe.mitre.org(website)
+secuirtyfocus.com(website)
+symantec.com(website)
+mozila.org vulavlity (website)
+
+exploit website::
+exploit-db.com(website)
+rapid7.com/db(website)
+0day.today(website)
+cxsecurity.com/exploit(website)
+
+
+stadard gudiline recomeddation and rules
+shared rules,method,pattern language
+impl. how to implemet standard and policy
+like a standard but not officaial
+proven to the best solution of a problem
+
+===================================
+SEI cert coding standard(website)
+www.securecoding.cert.org(website)
+
+OWASP(open web applicatio and security project)
+www.owasp.org(website)
+===================================
+
+owasp top 10 web app security flaws
+
+mircosoft.com/sdl(website)
+mircosoft.com/twc(website)
+
+static code analysis::
+
+safe and ussafe function in c languages
+
+
+input sentizatio for validate incorrect data
+
+binary code analysis::::
+
+bytecodes analysis::
+
+code analyssis
+fxcop.net(microsoft visual studio)
+clang static analyzer(c,c++,objective c)
+infer(java,c ,objective c)
+finbugs (java)
+cppcheck(c++)
+binary analysis tools
+
+should i reverse engineer::
+DMCA (website)(protect s/w assets from coping,but allow security research)
+
+electornic frontier foundation(EFF.ORG)(website)
+dmca topic on eff.org
+
+automated code analysis:::
+
+static code::not runninag as a program
+dynamic code::running in a testing env.
+
+source code compilers::
+gun compiler(gcc.gnu.org(website))
+clang(clang-analyzer.llvm.org)
+
+
+microsoft visual studio ide code analysis tools
+prefast
+fxcop
+
+statnd alone static analysis tools:
+
+tools::
+bufferoverflow testing tools::
+ollyDbg(www.ollydbg.de)
+
+IDA(interactive disassamble)-www.hex-rays.com(website)
+
+spike(immunitysec.com(website))
+
+metasploit(www.metasploit.com)
+
+fuzztesting:::
+
+resources.infosecinstitute.com(website)
+
+reporting buffer overflows::
+
+bug bounty(tools)
+
+bug brokers
+
+mitigating buffer overflow::
+www.techexams.net(website)
+
+kernel and firmware anti-BOF features
+DEP -data execution prevention
+ASLR-adderrss space layotu rnadomiazation 
+KASLR-kernal address space layout randomization 
+OS and kernal security configuratins
+
+host based security monitoring software
+n/w based secuity monitoring software
+
+detectiv bufferoverflow::
+external bufferoverflow detection:
+
+
+nw intrusion detecion system::
+snort(tools)
+NIDS(tools)
+Spunk.com(website)
+
+local buffer overflow detection::
+host layer defence
+
+clamav.net(tools) antivirus opensource
+
+ossec.github.io(tools) website
+
+mircosoft enhance mitigation experience toolkit (EMAT)
+
+window event viewer(tools)
+
+of cookies and canaries
+
+security cookie in return of fucntion change 
+
+enable compiler secuirty extension::
+
+GCC stackGurar
+Stack shield
+microsoft visual studio buffer security check
+
+preventing buffer overflow::
+active prevention uses countermesures to detect and mitigate threats
+NIPS,HIPS,Anti malware
+
+OSI network model
+tcp ip network model
+
+intrustion prevention system
+application firewall
+proxies(inbound)
+reverse proxies(outbound)
+
+
+NIDS(n/w detect)
+NIPS(prevention) snort
+
+NIPS action:
+
+Proxy::
+proxy server are real time packet and session filter
+help defin n/w security boundries
+reverse proxy
+load balancer exmaple of reverse proxy
+decrypt http/ssl/TLS traffic
+
+Squidproxy(tools)
+squid-cache.org(website)
+
+Application firewalls
+deep packet inspectoin and traffic flow analysis
+web application firewall
+SCP
+modsecurity.org(website)
+open source web applicatoin firewall(tools)
+
+NOP sleds are not present in good programmer
+hidiing buffer overflow attacks
+
+DEP:data execution prevention:::
+
+openBSD(unix)
+
+setting DEP in windows::
+
+bcdedit.exe
+
+DEP in unix
+dmesg|grep NX
+
+setting dep in ubuntu
+gksudo gedit /etc/default/grub
+
+
+Address space layout randomization::ASLR
+
+SEHOP
+(structure exeception handling override protection)
+
+
+SAFESEH::
+it is alternative protection machanism of SEHOP
+
+EMET(enhance mititgation experiece toolkit):microsoft security feature configuration utitility for microsoft
