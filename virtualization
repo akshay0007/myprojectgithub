@@ -1,0 +1,91 @@
+virtualization:::
+checking proceess support::
+egrep "(vmx/svm)" /proc/cpuinfo
+
+what is virtualization:::
+Bare metal installation:native installation 
+
+hypervisor::
+os running on virtual machine guest
+os running into hypervisor is callled host
+
+virtualization type::
+full virtualization
+para virtualization
+
+fulll virtalizaton::
+hardware virtual machine
+hypervisor create emulated devices(virual motherboard,ram etc)
+
+
+quick emulateor(QEMU)+kernal based virutal machine(KVM)
+
+PARA virtualizaton:::
+guest os must be modified to be aware it's virtualization
+guest can comm. directly with h/w
+Xen hypervisor...
+
+Hypervisors::
+Xen,Proxmox,ESX
+	RUN ON bare machine
+KVM
+	part of linux kernal
+
+libvirt and virtual machine manager tools (tools)
+
+create a virtual machine:::
+QEMU from command line genrally for creating virtualizatoin.
+install qemu qemu-kvm
+ls /usr/bin/qemu*  (process architecures)
+man qemu-system(manual pages)
+genrate disk image file
+
+Distk image formt
+Raw::::
+	a file that represent a disk
+	ALL SPACE TAKEN at creation :thick provisioned
+QEMU copy on wirte (QCOW2)
+
+copy on write::
+
+qemu-img create -f(format) qcow2 my-image.qcow2 60G
+
+
+qemu-system-x86 -cdrom pathofiso image  destinantion locaiton -m 2G -enable-kvm
+
+installation ubuntu(04)
+
+qemu-system-x86_64 my_image.qcow2 -m 2G -enable-kvm
+
+lshw(hardware info)
+
+free -h
+df -h
+
+modify a QEMU VM
+	set memory,chamge h/w ,add disk
+
+
+
+Libvirt(tools) ::provide standard interface to mng VM
+
+sudo apt-get install virt-manager
+virt-install
+
+control virtual machine with virsh::::
+virsh(tools)
+
+SPICE(protocol)
+VNC
+
+snapshot and cloneing of virtual machine:
+cloning to machine
+snapashot  of machine
+
+explorer containers with LXC::
+Linux container(LXC)
+install lxc1
+
+lxc provide container for different distro
+
+ip -a
