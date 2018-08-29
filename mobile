@@ -1,0 +1,372 @@
+ethical hacking mobile platform::
+9x mobile banking trojen 2013
+
+terms should know::
+ROM ::modifiy version of andorid system
+AOSP:andoird open source project
+Firmware::s/w os that h/w work perfect
+open source::
+Bloatware::s/w app install in os pre install
+APK::
+Stock rom::
+cyanogen mode::
+Odex::files speed up boot up time
+OTA::over the year
+recovery and download mode::
+Bricking:::
+
+half eaten fruit::apple
+jailbreak::process of removing s/w restriction(root access)
+unlock::phone to work in differrent carrier
+kernel::comp prog to mge ip and op
+not the same as rooting::
+
+A pleathor of vector::
+malware 
+  os mods:
+  app mods:
+  virus,rootkit,worms
+
+Data storage::
+email
+cpying
+encrypting
+
+
+Social engineering:::
+non technical
+
+Phishing::
+
+connectons::
+sandboxing::provide access to apps
+open =fragmentation
+
+opensignal.com(website)
+closed=restrictive
+
+side loading::install apps without going to legitmate side
+
+hacking android:::
+understanding architecture
+rooting
+attacks
+malwares
+
+
+Architecture::
+linux kernel->libererirs(surface mgr,opengl,SGL,media FW,SSL,FRee type,webkit,runtime layer(core lib,dalvik vm))-->framework(activity mgr,window mgr,pkg mgr,telephoney mgr,resoure mgr,content mgr)-->Apps(home ,content,browser etc)
+
+
+Understanding the device::
+security model::
+permission level(app. level,kernel level)
+	normal permission
+	dangerous permission
+	signature permission
+	signature or system permission
+
+ASLR(address space layout randomization) tech
+
+
+Application modules::
+activity
+content provider
+Services
+broadcast receiver
+
+
+Data storage::
+NAND flash
+SD card
+
+NFC(near field communcation)
+payment services
+android beam
+
+Android Debug bridge::
+remote shell
+push /pull
+
+rooting::
+overclock system
+run specialize apps
+side loading
+
+bootloader
+ fires of first
+kernel
+ apps to harware communication
+ under	clock for battery performance
+ sound gover
+
+Baseband(s/w) comm b/w radio and os
+ radio
+
+recovery
+
+stock recovery
+custom recovery
+
+dalvik cache & art
+download mode
+
+demo routing 05
+odin(tools)
+
+xda-developers(website)
+highonandroid.com(website)
+kingroot.net(website)
+
+odin(tools)
+
+attacks::
+decompile
+disassembly
+repackaging
+
+network attacks::
+
+private certificate+proxy serve=pwned
+
+proxy drone(tools)
+burpswip(tools)
+
+TLS
+
+NFC attacks::
+relay attack
+proxy chennel bluetooth
+
+data leakage
+uri schema
+internal storage
+sql lite
+ext storage
+insecure components
+ wifi
+
+malware::
+
+protection::
+no side loading
+
+hacing ios
+
+architecture of apple::
+core os(c based)(GSS(genric system servic),bluetooth,security framwork,key chains etc)->core services(p2p,cloud ,data protection etc)->media(camera,audio, etc)->cocoa touch(responsible for interface, like button,gesture etc)
+
+
+understanding the device:::
+NEXT(1980)
+open step(os)
+iphone os
+ARM based cpu
+
+
+bootup::
+execute code from ROM
+contains apple root ca public key
+check the low level bootloader
+
+cell service::
+baseband also verifies
+
+A7
+secure co processor
+
+DFU
+
+Application security::
+runtime secuirty
+app code signing
+extension
+app groups
+
+
+jailbreaking::
+over come the restriction
+custom kernel is used with root access
+customize/unlocking
+AT&T n/w allows
+
+jailbreak types::
+untethered::no computer needs
+tethered::need sombody(computer)
+semi thered
+
+types of jailbreak depends on device::
+pwnage
+redsnow
+jailbreakme
+evasion
+pangu8
+
+demo::
+en.pangu.io(website)
+
+locking it down::
+
+secure all hatches:
+find my iphone
+
+hacking other platform::
+loking at windows phone:
+
+architecture
+h/w->kernel->application platform
+
+supporting nfc
+support c and c++ porting
+wallet
+128 bit locker
+UEFI
+larger screens
+multi core processor 64 core
+app sandboxing
+
+jailbreaking the glass
+safeboot
+UEFI(unified extension firmware)
+
+poweron=>compare boot mgr=>signed binarires by ms & oem
+
+locking it down::
+lockdown.xml in windows
+
+blackberry::
+complete rebuild powerb by QNX
+
+MDM mobile device mgt guidline tools::
+MDM:
+monitor all device
+spice works
+mobile iron
+system center microsoft
+remote access
+MEM(mobile expence mgt)
+
+device provisioning
+
+patching and modification attacks::
+andorid:slef singed cert
+ios injection
+ logo and capt hook
+
+Decompiling:
+dex2jar,apk tools(tools)
+objective c
+class dump x ,x (tools)
+
+obfuscation ::
+like progrard
+detection
+
+guidelines and tools::
+lockout and wipe
+rooting /jail breaking
+updates
+hardware enryption
+filter email forwarding
+harden browser
+
+erase data=
+spicework(website)
+
+
+mobile malware::
+
+IOS malware::
+2008 iphone firmware 1.1.3 prep
+
+jailbreak default password::alpine
+2009 T-mobile scan
+2009 ikee/duh
+2012:malware in the appstore
+  call/find
+2013:nobitazz
+2014:
+ unfold
+ adthief
+ appbuyer
+ wirelurker & masque
+ xsser mRAT
+
+2015
+more ios malware::
+ lock saver free
+ xcodeghost
+ keyRaider
+ YiSpecter
+ Muda
+ youmi ad sdk
+
+ 
+FinSpy(tools)
+XAgent(tools)
+dropoutJeep(tools used via NSA)
+
+Hacking team tools
+inception
+copy9 and copy10(tools)
+1mole
+FlexiSPY
+ikeyguard/ikeyMonitor
+mobilespy
+innovaspy
+mspy
+mobistealth
+spyapp
+spykey
+stealthGenie
+
+
+Research::
+isam
+instastock
+mactans
+XARA
+jekyll
+neoneggshell
+
+
+ANdroid malware::
+																																				Accutrack
+ackposts
+bankbot
+binv
+boxer
+counterclank
+dogowar 
+fakeangry(C & C server)
+fakeAV
+fakebank
+fakenetflix
+fakeplay
+gingerbreak
+MMarketplay
+Obad
+NikiSpy
+SMSZombie
+SlemBunk
+Certifi-Gate
+Stagefright
+
+
+Mobile Payments::
+Secure element 
+host card emulation::
+
+Android pay:
+fingerprint scanning
+dead zones
+tokenization
+rewards
+
+
+Apple Pay::
+fingerprint scanning
+apple watch
+
+
+mobile card interfaces::
