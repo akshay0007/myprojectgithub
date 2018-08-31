@@ -1,0 +1,279 @@
+system hacking::
+Recon & footprinting:
+ip name
+namespace
+public data
+
+scanning:
+id targets
+id services
+id o/s
+
+enumaration:
+userlist
+secuirty flaws
+resources
+
+gain access
+maintain access
+covering your tracks
+
+gaining access password access:::
+
+revellin a password from locally strored data or via transmission
+
+CAC cards
+
+complaxicity:
+password recovery time simulator(tools)
+
+
+password stored
+SAM databases
+c/windows/system32/config/sam
+mount as HKLM/SAM
+c/windows/repair
+
+active dir::ntds.dit
+C/windows/NTDS/ntds.dit
+
+Linux::
+etc/shadow/
+
+apple::
+/var/db/dslocal/nods/default/users
+<user>.plist=>ShadowHashData Property
+
+Hash Value
+one way algo
+
+opcrack(tools)
+rainbow table(tools)
+
+tech used::
+dictonay attack
+brute force
+syllable attacks
+hybrid attacks
+rule based attack
+guessing attack
+
+brute force attack
+syllable attack
+hybrid attack
+rule based attack
+
+types of attacks::
+passive online::
+sniffing
+man in middle
+side jecking
+firesheep(tools)
+
+Active online::
+hash injection
+trojen/keylogger
+guessing
+
+offline attack::
+rainbow
+distributed n/w
+pre computed hashes
+
+non electronic::
+dumster diving
+shoulder surfing
+social engineering
+
+The Hash::
+LM Hash/NTLM stores password up to 14 character
+
+more cracking 3::
+
+NTLM authentication
+Kerberos authentication
+salting
+rainbow table and other options
+
+
+NTLM authentication LM hash::(defautl auth) usages::
+there is no kerberos trust between two diff forests
+auth. is attempted by IP
+if ur firewall blocking kerberos
+password are not transimitted
+
+Kerberos auth::
+ticket based
+fast
+time based
+
+domain controller(key distu center)
+TGT(tikcet granting transmission)
+
+John the ripper
+
+
+salting::
+
+rainbow tablew::
+precomputed hash table
+
+freerainbowtables.com(website)
+lookup tables
+NI7(multiple core)
+
+
+tools::
+cain & abel(tools)
+john the ripper(tools)
+
+
+windows/system32/config/SAM  (copy SAM,SYSTEM)
+
+
+windows =>regedit=>HKEY_LOCAL_MACHINE=>SAM=>SAM
+
+windows=>cmd(admin)=>type c:\ reg save hklm\sam c>\sam\sam
+
+c:\ reg save hklm\system c>\sam\system
+
+outpost9.com(website)
+tobtu.com(website)
+rainbowtable.it64.com
+
+
+gain2 escalating privileges:::
+
+
+pwn the admin/root acc.
+
+www.exploit-db.com(website)
+mataspolit(tools)
+
+types of escalation::
+vertical escalation:
+user gets admin level access
+create user
+configure system setting
+extract data
+
+offline access 
+windows
+computer managment
+
+counter measures::
+
+total pawns::
+spyware
+backdoor
+keylogger
+
+
+level of spyware
+backdoors(creating evel code inside legimate code)
+
+backdoor
+keylogger
+crackers
+
+spyware backdoors::
+spyware::
+capture keylogger
+screenshots
+auth
+emails
+web forms
+habits
+
+whos spying
+
+
+backdoors::
+remote admin utility
+
+types of backdoors::
+back orifice
+sercom(router companey backdoor was in there router)
+nsa inside
+
+remoteexec(tools)
+install apps
+execute scripts
+and copy/modify/delete
+
+
+keyloggers::
+s/w and h/w based
+monitor every keylogs
+capture  sceenshots
+websits etc
+wifi keylogger
+bluetooth keylogger
+acoustic keylogger(based on sound)
+rootkit logger(running inside GPU of processor)
+driver keylogger
+hypervisor keylooger(reside on malware)
+
+
+maintaing and accessing your tools::
+
+
+rootkit::
+remote control
+eavesdropping
+polymorphism
+																						
+types of rootkit::
+user mode
+kernel mode
+hybrid
+firmware
+virtual
+bluepill(rootkit example)
+
+alernate data stream::
+machintosh file system hir.
+data fork+resource fork
+
+dir /r(in windows show hidden files)
+
+symbolic link
+mklink (in windows)
+
+stengnograpy classification::
+technical
+linguistic
+
+image based
+document based
+folder based
+audio based
+web based
+white space based
+dvd rom based
+natural text based
+hidden os
+
+cover our tracks and clear logs:
+cover tracks:
+basic method::
+
+a good attacker
+clear browser history
+delete cookies
+download del
+cler password
+del private data
+clear logs
+
+Advanced methods::
+disable auditing
+do damage
+enable auditing
+
+ntsecurity.nu/toolbox/winzapper(tools /website)
+winzapper(tools)
+
+auditpol /?(tools in windows) for policies
+
+
