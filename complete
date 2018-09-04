@@ -1,0 +1,398 @@
+complete cource ::
+rile of engagment:: 
+
+start making lists::
+n/w layouts
+review physical security
+ip address 
+router/switchs/ids
+how many device exits
+host machines
+os how many servers
+
+firewall testing
+protocol filtering
+thresolds
+hit the ids
+look at the response
+
+enumarate devices
+
+escalating privilages::
+poor security policies
+
+
+======================================================================================================
+tools::
+so many choosen from::
+OSSTMM==>open source security testing methodology methods;
+OWASP==>open web application security projects(zed attack proxy project)
+ISSAF==>information system security assement framwork
+NIST==>nation institute standard tech
+LPT==>EC council
+Foundstone==>Mcafee
+ISS==>IBM
+
+======================================================================================================
+covering all ur bassis::
+information gathering==>external penttesting==>vulnarblity==>internal pentest==>FIREwall penttestig
+==>ids pentesting==>password cracking penttest(hydraaa,bruteforce etc)=>social eng==>webapp pentest
+==>sql pentesst==>router switch penttest==>wireless pentest=>dos penttest==>stolen device==>source pntest(ZEP)==>physical security pent==>camera pentest==>database pentest==>secuirty patch==>data leakage==>sap penttest==>vpn pentest==>voip(n/w) pentest==>cloud pen test==>VM pentest=>war dialing==>malware pentest(key logger,backdoor,ransomwares)==>log mgt test==>file integrity system==>mobile device test==>telecom/broad band pentest==>email security==>batcave pentest(own n/w)
+
+======================================================================================================
+step to successful pentest::
+authorize
+define the scope
+start with search engine
+google hack(site diigger,GHDB,meta goofil)
+social engineering
+website footprinting(black widow,website copier,HTTrack)
+email footprinting(NSLookup,emailtracker pro,email lookup,polite mail)
+competitive intelligence
+WHOIS Recon(smartwhois,domain dossier,super scanner)
+DNS Recon(DNS stuff,sam spade,nslookup)
+Network recon(path analysier,visual route,network ping)
+social engineering(shoulder surfing,dumpster diving,eavs dropping)
+document finding.
+======================================================================================================
+scanning the target::
+host discovery::(tools)
+angrey ip scanner
+nmap/zenmap
+cola soft ping tools
+netscan tool pro
+super scan
+PRTG n/w monitor
+
+banner grabbing::
+telnet
+netcraft
+ID serve
+
+n/w vulnavility::
+nessus pro
+ratina cs
+core impact
+GFI lan guard
+
+drawing the n/w:
+tools:
+topology manager
+
+fire up the proxy::
+tools:
+proxy workbench
+tor n/w
+proxyfire
+socks chain
+
+documenetation
+======================================================================================================
+finding the n/w range
+host discovery
+angrey ip scanner(tools)
+net bios enumaration::(tools)
+hyna,winfingerprint,super scan
+SNMP enumaration::
+
+LDAP(database store user data info) enumaration::
+
+NTP enumaration(time synchorization protocol)
+NTP finger printing
+
+SMTP enumaration:
+
+DNS enumaraaaation:::
+
+documentation
+======================================================================================================
+password cracking::
+social engineering
+shoulder surfing
+dumpster diving
+dictnory attack
+brute force
+rule based
+password guessing
+trojan
+hash injection
+wire sniffing
+MiTM(man in middle)
+replay attack
+rainbow table attack
+distrubuted n/w attack
+
+
+Privilages escalation::
+vertical escalation(kernel level)
+horizontal escalation
+
+Service account:
+anti key logging
+spyware
+keylogger
+
+hide and seek time::
+install rootkit
+stegnographt tech
+stego suite(tools)
+rootkit buster(tools)
+stego detect(tools)
+
+covering out track::
+log file into each os for checking info
+log fludding
+======================================================================================================
+sniffing the target::
+audit traffic
+id route traffic
+find rogue DNS
+find rogue DHCP 
+MAC flood
+DHCP starvation
+Rogue server(other people use ur machine instead of service machine)
+rogue server
+ARP poisoning
+mac spoofing
+IRDP spoofing
+DNS spoofing
+cache poisoning
+proxy server dns poisoning
+
+MAC Flooding::
+flooding each of ethernet frames of macaddress into switch
+tools:
+yersinia and mac off(tools)
+
+DHCP starvation::
+pool of ips into dhcp server then user rouge server
+spoof dns server
+
+ARP posoing::
+cain abel,win arpattack(tools)
+
+mac spoofing::
+mac attached to n/w card
+tools:
+SMAC
+
+IRDP spoofing::
+extension of ICMP
+
+
+DNS spoofing::
+
+cache poisoning::
+send malware to change proxy setting of browser
+
+
+proxy server dns poisoning::
+
+attacking through social engineering:
+mail
+attached spyware
+======================================================================================================
+DDOS attacks::
+outline objective
+load up the server
+look for vulnerablities
+syn attack the server
+flood the port
+email bombing
+flood web forms
+documents
+
+
+outline objective:
+
+load up h server:
+artifical load
+load balancer tools
+Jmeter(for load testing)(tools)
+webserver stress (tools)
+web capcity analysis
+
+syn attack flooding
+tools:
+DDOS toolkit
+dirt jumper
+Dos http
+
+flooding ports:
+
+Email bombing::
+methods:
+mass email
+list linking
+zip bombing
+
+flood web forms::
+
+======================================================================================================
+session hijacking:::
+steps::
+locate a session
+sniff session
+crack the session id encryption
+session fixation
+make a conn with target
+collect serverl session
+predict new id
+replay new id
+brute force the session
+
+
+packet sniffing
+tools:
+wireshark 
+windump
+microsoft monitor
+
+tools:
+OWASP
+ZAP
+Zed attack proxy
+burp suite
+JHijack
+
+session id encrytion checking
+======================================================================================================
+Pentest targeting web server
+whois(tools) find out ips
+http recon(tools)
+netcraft(tools)
+crawling website
+
+look at code
+web pages
+email addresses
+DIR buster(tools)
+nessus(for system vulnarablity)
+
+http response splitting::
+CR ,ALF checking in headers
+cache poisoing into web site
+
+brute force ssh and ftp
+weblizer,relax(tools) for checking webserver logs
+metasploit,W3AF(tools) framework for checking logs
+======================================================================================================
+Define targets and gathering information::
+AMAP(tools) applicaion footprinting
+Configure mgt testing:
+id port using ssl/tls
+nessus,nmap(tools)
+analysis
+spidering,mirrioring of websites
+NETCAT(tools)
+
+Authenticaiton testing::
+session mgt:
+traffic intercept
+
+authentication on testing
+cross site flashing
+xss proxy(tools)
+
+sql injection
+ORM injection
+SSL injection
+Xpath injection
+
+Denial of service::
+
+Web service testing::
+
+SOAP lite
+WS digger
+
+AJAX testing::
+======================================================================================================
+looking at wifi::
+whos is out there:
+
+WEP testing::
+ssid is visible or hidden
+aircrack(tools)
+airsnort(tools)
+airmonitoring(tools)
+
+deauth:
+airreplay(tools)
+
+Genral wifi testing:
+steps:
+ssid is visible or not
+SMACK(tools) mac spoofing
+
+======================================================================================================
+mobile devices::
+qualcom encryption complete
+
+Android pentest:
+hummer(mobile trojen)
+AnDOSid(tools)
+woodpicker(tools)
+
+ios::
+jail break
+metasploit
+
+windows::
+on device encryption
+
+blackberry::
+BBProxy(tools) hijecking 
+email code
+DOS
+
+tools::
+zANTI(tools)
+dSploit(tools)
+Hackode(tools)
+
+======================================================================================================
+firewall and ids::
+check firewall ids policies
+
+firewall testing::
+recon==>port scan=>banner grab==>firewall
+
+==>disable trusted host==>spoof the ip==>perform source routing
+
+==>ip fragmentation==>fire up vpn==>use a proxy
+
+==>icmp tunnel==>ACK tunnel==>http tunnel==>ssh tunnel
+==>use system==>fire up MiTM
+
+
+IDS testing::
+disble trusted host==>insertion attack==>evasion attack==>DOS attack==>
+==>obfuscation==>false positive==>session splicing==>unicode evasion==>
+==>fragmentation==>overlapping fragmentation==>TTL(time to live) attack==>
+==>invalid RST packets==>urgency flag==>polymorphic shell code attack==>
+==>asiii shell code==>application layer==>encryption & flooding==>post connection
+ syn==>pre connection syn==>
+
+======================================================================================================
+cloud testing::
+platform as a service
+software as a service
+
+rise the periscope
+
+lock in issues==>gov inssues==>compliance issues==>rosource isolation==>anti malware
+==>csp firewall==>csp authentication==>csp encrypt in transit==>csp file encrypted
+==>csp data retention==>user SIP(save internet policies)==>complete vulnerablity assement
+==>csp audit feature==>automate cloud testing
+======================================================================================================
+how it bring together::
+TPS reports:
+team info
+list of tools
+copy of original scope
+main body
+deliverd report
+
+======================================================================================================
+	end
