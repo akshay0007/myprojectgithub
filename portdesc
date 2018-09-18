@@ -1,0 +1,26 @@
+Ports between 1024 and 49151 are considered "registered". This means that they can be "reserved" (in a very loose sense of the word) for certain services by issuing a request to the IANA (Internet Assigned Numbers Authority). They are not strictly enforced, but they can give a clue as to the possible services running on a certain port.
+Ports between 49152 and 65535 cannot be registered and are suggested for private use.
+
+
+However, there are some ports that are worth knowing due to their ubiquity. The following is only a very incomplete list:
+
+20: FTP data
+21: FTP control port
+22: SSH
+23: Telnet <= Insecure, not recommended for most uses
+25: SMTP
+43: WHOIS protocol
+53: DNS services
+67: DHCP server port
+68: DHCP client port
+80: HTTP traffic <= Normal web traffic
+110: POP3 mail port
+113: Ident authentication services on IRC networks
+143: IMAP mail port
+161: SNMP
+194: IRC
+389: LDAP port
+443: HTTPS <= Secure web traffic
+587: SMTP <= message submission port
+631: CUPS printing daemon port
+666: DOOM <= This legacy FPS game actually has its own special port
