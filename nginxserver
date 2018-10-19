@@ -1,0 +1,160 @@
+prefork::
+asynch request delaing:
+handline each request by apache but in case of nginx static resouce overhead request cost reduce due asynch request processes
+
+static dynamic content:
+
+faster then apache
+
+static content resouces shering faast without req. server side coding
+concurrent requests:
+
+
+configurations:
+
+nginx::
+location /images{}
+apache 
+<directory 'www/site/images'>
+</directory>
+
+building nginx from source
+
+
+systemd
+
+nginx initd script
+
+
+context (scope)
+domain key value
+
+
+
+serever{
+set $weekend='no';
+
+if($data_local ~ 'Monday'){
+	set $weekend 'yes'
+}
+
+rewrite 
+and redirect
+
+try_file
+
+
+
+named locations
+loggin type
+
+inheritance 
+and directive tags
+
+array directive
+standard directive
+action directive
+
+
+FastCGI protocol :: faster
+
+for each cpu core::
+worker processor
+
+worker_connection
+
+buffer size 
+time out
+
+header expires::
+
+compressed response
+like gzip
+
+fast cgi cache
+
+configure micro cache
+
+apache bench(tools)
+
+xcache 
+
+http2::binary protocol
+http1::textual protocol
+
+sever push
+
+nginx security::
+https::
+
+enabling port forwarding
+tls security machanism
+
+
+Rate limit for server check for load testing
+siege (tools)
+
+basic authentication 
+
+cross origin policies 
+cross site scripting
+
+removing unnessary modules like http autoindexing
+
+certification encryption
+
+lets encrypt server(website)
+:encourrage use of ssl over http
+
+certbot (website)
+
+certbot.eff.org(website)
+
+
+reverse proxy and load balancing::
+
+reverse proxy :: b/w client and php fpm
+
+load balancing::
+
+upstram (collection of server)
+
+events{}
+http{
+ upstream servername{
+	ip_hash//for sticky hash
+	least_conn//FOR least connection 
+	sever localhost:1001;
+	sever localhost:1002;
+	sever localhost:1003;
+}
+
+server {
+	listen 8888;
+	location /{
+		proxy_pass http:/servename;
+	}
+    }
+
+}
+
+round robin load balancer: previous
+
+
+load balancer options::
+sticky session::
+ by using ip_hash
+
+sticky session::basically load balancing on the basis of if server down then move all traffic to another server 
+in preiously among three server run concurrenty without any problem they are distrubuted all connections
+
+
+least_conn::FOR least connection if server one busy second connection move to another server
+
+geoip 
+
+
+
+
+
+
